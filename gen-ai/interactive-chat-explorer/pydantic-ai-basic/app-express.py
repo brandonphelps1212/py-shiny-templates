@@ -10,6 +10,7 @@ _ = load_dotenv()
 chat_client = Agent(
     "openai:gpt-5.6-luna",
     system_prompt="You are a helpful assistant.",
+    model_settings={"openai_reasoning_effort": "none"},
 )
 
 conversation_history = reactive.value(list[ModelMessage]([]))

@@ -8,6 +8,7 @@ _ = load_dotenv()
 
 llm = OpenAI(
     model="gpt-5.6-luna",
+    reasoning_effort="none",
 )
 
 ui.page_opts(

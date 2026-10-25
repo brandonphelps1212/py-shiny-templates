@@ -44,6 +44,7 @@ date_tool = FunctionTool.from_defaults(fn=get_current_date)
 
 llm = OpenAI(
     model="gpt-5.6-luna",
+    reasoning_effort="none",
 )
 
 ui.page_opts(
